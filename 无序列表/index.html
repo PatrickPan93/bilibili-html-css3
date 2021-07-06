@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>无序列表</title>
+    <base target="_blank" />
+    <!--
+      无序列表一般用于:
+      新闻列表、商品列表、导航条...等等
+      -->
+    <!-- 通过css去掉无序列表前面的序号 -->
+    <style type="text/css">
+      ul {
+        list-style: none;
+      }
+      li {
+        float: left;
+        background: #ffd564;
+        width: 180px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+      }
+    </style>
+  </head>
+  <!-- 给一堆数据添加语义, 也就是告诉浏览器这一堆数据是个整体
+       无序列表中的表项都没有顺序之分
+       例如中国的城市
+  -->
+  <body>
+    <!-- unordered list-->
+    <h3>中国一线城市</h3>
+    <ul>
+      <!-- list item -->
+      <li><a href="https://www.baidu.com/s?wd=广州">广州</a></li>
+      <li><a href="https://www.baidu.com/s?wd=北京">北京</a></li>
+      <li><a href="https://www.baidu.com/s?wd=上海">上海</a></li>
+      <li><a href="https://www.baidu.com/s?wd=深圳">深圳</a></li>
+    </ul>
+  </body>
+</html>

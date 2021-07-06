@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>表格的结构</title>
+  </head>
+  <!-- 由于表格中数据较为复杂, 为了方便进行管理和语义的提升, 我们可以对表格中存储的数据进行分类
+       1.表格的标题
+       2.表头信息(列名)
+       3.表格的主体信息(td)
+       4.表格的页尾信息
+
+       注意:
+       1. 如果我们没有显示的写tbody标签,浏览器会自动帮我们加上
+       2. 如果指定了thead和tfoot,那么在修改整体的表宽度高度时,它们不会受影响
+       -->
+  <body>
+    <table border="1" width="500px" height="300px">
+      <caption>
+        学生信息
+      </caption>
+      <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+      </tr>
+      <tr>
+        <td>张三</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>李四</td>
+        <td>40</td>
+      </tr>
+      <tfoot>
+        <tr>
+          <td>2</td>
+          <td>30</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

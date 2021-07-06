@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>模拟一下百度首页的几个跳转</title>
+    <base target="_blank" />
+  </head>
+  <body>
+    <!-- 由于所有超链接target都为_blank,每个都要写代码比较冗余,我们可以采用base标签来指定全局默认target的值-->
+    <a href="https://news.baidu.com/" target="_blank">新闻</a>
+    <a href="https://www.hao123.com/" target="_blank">hao123</a>
+    <a href="https://map.baidu.com/" target="_blank">地图</a>
+    <a href="https://live.baidu.com/" target="_blank">直播</a>
+    <a href="https://haokan.baidu.com/?sfrom=baidu-top" target="_blank">视频</a>
+    <a href="https://tieba.baidu.com/" target="_blank">贴吧</a>
+    <a href="https://xueshu.baidu.com/" target="_blank">学术</a>
+    <a href="https://www.baidu.com/more/" target="_blank">更多</a>
+
+    <br />
+    <!-- 通过base标签这里的a标签虽然没指定target属性, 但是他们的target依然是_blank-->
+    <a href="https://news.baidu.com/">新闻</a>
+    <a href="https://www.hao123.com/">hao123</a>
+    <a href="https://map.baidu.com/">地图</a>
+    <a href="https://live.baidu.com/">直播</a>
+    <a href="https://haokan.baidu.com/?sfrom=baidu-top">视频</a>
+    <a href="https://tieba.baidu.com/">贴吧</a>
+    <a href="https://xueshu.baidu.com/">学术</a>
+    <a href="https://www.baidu.com/more/">更多</a>
+  </body>
+</html>

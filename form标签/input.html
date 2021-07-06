@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>form标签</title>
+    <!-- 表单标签一般用于采集用户输入 -->
+    <!-- 表单常见元素
+      1. input标签: input属性有很多类型的取值, 类型的不同会直接影响input标签的外观与功能
+      -->
+  </head>
+  <body>
+    <form action="GET">
+      <!-- 明文输入框 -->
+      账号: <input type="text" />
+      <!-- 密文输入框 -->
+      密码:<input type="password" value />
+      <br />
+      <!-- 给输入框设置默认值 value-->
+      账号: <input type="text" value="account" /> 密码:<input
+        type="password"
+        value="password"
+      />
+      <!-- 单选框 -->
+      <!-- 不同的radio通过name的方式来起到互斥的效果 -->
+      <!-- 如果想给单选框设置默认值需要在该值上使用checked属性来表示 -->
+      <br />
+      <input type="radio" name="gender" checked="checked" />男
+      <input type="radio" name="gender" />女
+      <input type="radio" name="gender" />保密
+      <!-- 多选框 -->
+      <br />
+      <input type="checkbox" name="gender" checked="checked" />男
+      <input type="checkbox" name="gender" />女
+      <input type="checkbox" name="gender" />保密
+    </form>
+  </body>
+</html>

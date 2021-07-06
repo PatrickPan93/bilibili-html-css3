@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>button</title>
+  </head>
+  <body>
+    <form action="https://www.baidu.com/s?" method="GET">
+      <!-- 输入中的name表示如果提交表单的话,input获取到的数据将会提交到服务器中-->
+      <!-- wd=${input} -->
+      <input type="text" name="wd" />
+      <!-- button为提交按钮, 通过value来表示button的显示值 -->
+      <!-- onclick代表点击按钮后发生的动作 -->
+      <input type="button" value="按我按我" onclick='alert("已经点击我了")' />
+
+      <!-- 使用图片作为按钮 -->
+      <input
+        type="image"
+        src="../images/p奥特曼.png"
+        onclick="alert('已经点击我了')"
+      />
+
+      <!-- reset按钮, 用来清空当前表单的数据 -->
+      <!-- reset按钮有默认显示值 "重置" -->
+
+      <input type="reset" />
+      <!-- submit按钮, 用来对表单进行提交 -->
+      <input type="submit" />
+
+      <!-- 隐藏input,一般用于手机用户的数据,不会出现在界面中 -->
+      <input type="hidden" />
+    </form>
+  </body>
+</html>

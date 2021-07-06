@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>a标签</title>
+  </head>
+  <!-- a标签用于控制页面与页面之间的跳转
+  <a href="https://target.domain.com">内容区域</a>
+  >-->
+  <body>
+    <a href="https://www.baidu.com">点我去百度</a>
+    <br />
+    <!-- 内容区域也可以时图片(点击图片跳转) -->
+    <p>奥特曼本曼</p>
+    <a href="https://www.baidu.com/s?wd=奥特曼">
+      <img src="../images/p奥特曼.png" /> </a
+    ><br />
+
+    <!-- 跳转到本地图 -->
+    <a href="../images/s奥特曼.png">点我跳转其他图片</a>
+  </body>
+  <br />
+
+  <!-- 利用target属性来控制跳转时如何跳转
+  target="_blank" 新开选项卡跳转
+  target="_self"  默认跳转方式,在本选项卡跳转
+
+  -->
+  <a href="../images/s奥特曼.png" target="_blank" title="鼠标悬停时显示内容"
+    >新选项卡跳转</a
+  ><br />
+  <a href="../images/s奥特曼.png" target="_self" title="鼠标悬停时显示内容"
+    >本选项卡跳转</a
+  >
+</html>

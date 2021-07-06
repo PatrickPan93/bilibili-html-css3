@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>video 标签</title>
+  </head>
+  <body>
+    <!-- video标签一般用于播放视频 xxx.webm格式为网页中专用的视频格式-->
+    <!-- autoplay属性可以使视频自动播放
+         src用于指定播放视频的地址
+         controls 是否需要控制条
+         poster 当视频未播放时所使用的海报
+         loop 是否循环播放(一般用于广告循环播放)
+         preload 是否预加载视频(如果设置了autoplay 那么 preload就会失败)
+         muted 是否静音
+         width 限制视频宽度
+         height 限制视频高度
+    -->
+    <video
+      src="../images/190828_27_SuperTrees_HD_17.webm"
+      autoplay="autoplay"
+      controls="controls"
+      poster="../images/p奥特曼.png"
+      width="500px"
+      height="500px"
+      loop="loop"
+      muted="muted"
+    ></video>
+  </body>
+</html>

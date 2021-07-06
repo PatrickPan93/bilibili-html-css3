@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>table标签属性</title>
+  </head>
+  <body>
+    <!--
+      1.表格的宽度(width)和高度(height)属性(table标签使用),默认按照具体内容来自动调节
+      2.水平对齐(align)和垂直对齐(valign)(tr/td/table标签使用),
+        如果tr和td同时配置了align属性,
+         那么将会按照td的配置来进行展示
+      3.外边距和内边距的属性(table标签使用),
+        外边距(cellspacing)理解为单元格之间的距离,默认值为2.
+        内边距理解为数据离边框的距离
+
+      注意: 以上讲解仅作为了解, 后续样式控制均需通过css来进行控制
+      -->
+    <!-- 两行两列表格 -->
+    <table
+      border="1"
+      width="500px"
+      height="500px"
+      align="center"
+      cellspacing="0"
+      cellpadding="50"
+    >
+      <tr align="center" valign="bottom">
+        <!-- 当td标签调整宽度高度时, 表格整体大小不变,但会改变相同行td或不同行的tr占据的table大小比例-->
+        <td
+          width="150px"
+          valign="top
+"
+        >
+          1.1
+        </td>
+        <td>1.2</td>
+      </tr>
+      <tr>
+        <td>2.1</td>
+        <td>2.2</td>
+      </tr>
+    </table>
+  </body>
+</html>

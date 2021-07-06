@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>单元格合并</title>
+  </head>
+  <!-- 单元格合并分为水平合并和垂直合并两种方式 -->
+  <body>
+    <table
+      bgcolor="black"
+      cellspacing="1px"
+      width="500px"
+      height="300px"
+      align="center"
+    >
+      <tr bgcolor="white">
+        <!--
+        1.水平合并单元格只需在td里用colspan声明要合并的单元格格式即可
+          合并后需要注意td的数量, 其实就是把一个单元格当做两个单元格来看待
+        2.单元格合并规律是向后合并和向下合并
+             -->
+        <td colspan="2"></td>
+        <td></td>
+      </tr>
+      <tr bgcolor="white">
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr bgcolor="white">
+        <td></td>
+        <td colspan="2"></td>
+      </tr>
+      <tr bgcolor="white">
+        <!-- 垂直合并单元格 -->
+        <td rowspan="2"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr bgcolor="white">
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>

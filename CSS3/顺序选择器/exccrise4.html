@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      /* odd为奇数的意思 */
+      p:nth-child(odd) {
+        color: red;
+      }
+      /* even为偶数的意思 */
+      p:nth-child(even) {
+        color: blue;
+      }
+      /* 如果是想要同类型标签的基数标签 */
+      /*
+      p:nth-of-type(odd) {
+      }
+      p:nth-of-type(even) {
+      }
+       */
+    </style>
+  </head>
+  <body>
+    <!-- 需求: 同级别的p标签 的奇数标签变红色 -->
+    <p>我是段落1</p>
+    <p>我是段落2</p>
+    <p>我是段落3</p>
+    <p>我是段落4</p>
+    <p>我是段落5</p>
+    <p>我是段落6</p>
+    <p>我是段落7</p>
+    <p>我是段落8</p>
+    <p>我是段落9</p>
+  </body>
+</html>

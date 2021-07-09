@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      p[alt^="abc"] {
+        color: red;
+      }
+      p[alt$="abc"] {
+        color: blue;
+      }
+      p[alt*="xx"] {
+        color: pink;
+      }
+    </style>
+  </head>
+  <!--
+  是否以value开头
+  [attribute|=value]  CSS2 只能找到value开头,并且value是被-和其它内容隔开的
+  [attribute^=value]  CSS3 value开头的都能找到,无论什么符号
+
+  是否以value结尾
+  [attribute$=value]  CSS3
+
+  是否包含value
+  [attribute~=value]  CSS2 只能找到独立的单词,包含value并且value被空格隔开的
+  [attribute*=value]  CSS3 只要包含value字符串就可以找到
+  -->
+
+  <body>
+    <p alt="abc">我是段落1</p>
+    <p alt="abc-c">我是段落2</p>
+    <p alt="ccc">我是段落3</p>
+    <p alt="ccabccc">我是段落4</p>
+    <p alt="asdasdabc">我是段落5</p>
+    <p alt="xxxxae">我是段落6</p>
+    <p alt="wonddddw">我是段落7</p>
+  </body>
+</html>

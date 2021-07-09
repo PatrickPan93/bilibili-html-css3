@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      /*
+     only-child 选中标签中只有一个子元素的标签,在此处 body有2个子元素,不符合.
+     p没有子元素 不符合
+     div有一个子元素 符合条件, 所以div里面的被选中
+       */
+      p:only-child {
+        color: red;
+      }
+      /*
+      only-of-type 在父元素中只有一个该标签的元素
+
+      p:only-of-type {
+        color: blue;
+      }
+       */
+    </style>
+  </head>
+  <body>
+    <!-- 让p2变为红色 -->
+    <p>p1</p>
+    <div>
+      <p>p2</p>
+    </div>
+  </body>
+</html>

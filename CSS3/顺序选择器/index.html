@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>序选择器</title>
+    <style>
+      /* 通过p:first-child的方式来实现同级别的第几个(不区分类型) */
+      p:first-child {
+        color: red;
+      }
+      /* 第n个p标签的样式 */
+      p:nth-child(2) {
+        color: green;
+      }
+      /* 最后一个p同级的元素 */
+      p:last-child {
+        color: pink;
+      }
+      /* p:first-of-type 同级别相同类型类型的第一个标签 */
+      p:first-of-type {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CSS3中新增最具代表性的序选择器 -->
+    <!-- 同级别的第几个
+       同类型的第几个
+       -->
+    <!-- 需求: 不用id、class实现 第一个p为红色 div里面的第一个p为红色 -->
+    <p>我是段落1</p>
+    <p>我是段落2</p>
+    <div>
+      <p>我是段落1</p>
+      <p>我是段落2</p>
+      <p>我是段落3</p>
+    </div>
+  </body>
+</html>

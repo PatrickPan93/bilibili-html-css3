@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>交集选择器</title>
+    <!-- 给所有的选择器选中的标签, 相交的那部分标签设置属性 -->
+    <!-- 选择器和选择器之间没有任何连接符号 -->
+    <style>
+      /*
+      选择器p.s1 意思是所有p标签 请求的类为s1的 都会使用该样式进行设置
+      企业中用的不多
+       */
+      p.s1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="s1">我是段落</p>
+    <p class="s1">我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+  </body>
+</html>

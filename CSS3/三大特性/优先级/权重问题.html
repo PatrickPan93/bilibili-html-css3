@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      #identity1 .box2 {
+        color: red;
+      }
+      .box1 .box2 {
+        color: green;
+      }
+      div ul li p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <!--
+    三个选择器都选择中了p标签,但最终出来的是red.
+    当多个选择器混合一起使用的时候,我们可以通过权重计算来确定最后的层叠结果
+    1. id选择器多的优先级最高
+    2. 如果id选择器数量相同, 那么就对比类的数量
+    3. 如果类的数量相同, 就对比标签选择器的数量
+    4. 如果上述都相同, 那么就按照代码先后位置来层叠
+    5. 通配符不参与计算
+    -->
+  <body>
+    <div id="identity1" class="box1">
+      <ul>
+        <li>
+          <p id="identity2" class="box2">我是段落</p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>important</title>
+    <style>
+      #identity {
+        color: green;
+      }
+      .para {
+        color: pink;
+      }
+      /*
+      这里的样式按正常来说 是id选择器最高的, 但是我们在标签选择器中把color属性通过!important来提升该属性的优先级为最高
+       */
+      p {
+        color: red !important;
+      }
+      * {
+        color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    用于提升某个选择器中的某个属性的优先级, 可以将被指定属性调整到最高
+    important只能用于直接选中标签的选择器中, 但不能用于简介选中, 通配符选择器也属于直接选中
+     -->
+    <ul>
+      <li>
+        <p id="identity" class="para">我是段落</p>
+      </li>
+    </ul>
+  </body>
+</html>

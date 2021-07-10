@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      /*
+      我们给div设置样式为红色 p也会变为红色
+       */
+      body {
+        color: pink;
+      }
+      div {
+        color: red;
+        font-size: 30px;
+        font-family: "Microsoft YaHei", serif;
+        background: skyblue;
+        height: 50px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <!--
+  继承性: 给父元素设置一些属性,子元素也可以使用
+  注意点: 并不是所有的属性都可以继承, 只有 color,font-,text-,line这些相关属性才能被继承
+         无论是子代还是后代都可以继承
+         a标签的文字颜色和下划线是不能继承的
+  应用场景: 利用继承性可以简化代码,减少冗余代码量,规范进行样式管理.(通过body可以进行全局管理)
+   -->
+  <body>
+    <div><p>我是段落</p></div>
+
+    <div>
+      <ul>
+        <li>
+          <p>我是段落</p>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <a href="#">我是超链接,我不继承text-</a>
+    </div>
+
+    <div>
+      <h1>我不继承文字大小</h1>
+    </div>
+
+    <p>我继承了body的颜色属性</p>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>span</title>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 需求: 文字"段落"要求是红色 -->
+
+    <p>我是<span>段落</span>,我是<span>段落</span></p>
+    <!--
+    div和span区别:
+    1.div独占一行, span不会单独占领一行
+    2.div是一个容器级别的标签, 而span是文本级别的标签
+
+    容器级标签: 容器级标签里面可以嵌套所有的其它标签 ( div h ul ol dl li ... )
+    文本级别标签: 只能嵌套文本标签 ( span p buis strong em ins del ... )
+    -->
+
+    <div>我是div</div>
+    <div>我是div</div>
+    <span>我是span</span>
+    <span>我是span</span>
+  </body>
+</html>

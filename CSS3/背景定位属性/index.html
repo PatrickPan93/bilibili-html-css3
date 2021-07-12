@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      div {
+        width: 500px;
+        height: 500px;
+      }
+      .box1 {
+        background-image: url("../../HTML/images/sss");
+        background-repeat: no-repeat;
+        background-color: red;
+        background-position: center left; /* 通过水平+垂直位置组合 也可以用像素来表示*/
+        /*
+        图片全局居中
+        background-position-x 水平
+        background-position-y 垂直
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 图片会覆盖背景颜色(仅覆盖图片尺寸大小,尺寸外的依然会呈现bg color -->
+    <div class="box1"></div>
+  </body>
+</html>

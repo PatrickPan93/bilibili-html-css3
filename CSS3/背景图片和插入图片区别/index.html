@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>背景图片和插入图片的区别</title>
+    <style>
+      div {
+        width: 331px;
+        height: 202px;
+        /*
+        移动图片到右下角
+         */
+        background-position: right bottom;
+      }
+      .box1 {
+        background-image: url("../../HTML/images/s奥特曼.png");
+      }
+      .box2 {
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 从显示效果上看,背景图片并不占据块空间,而插入图片会占用区域块里面的空间 -->
+    <!-- 背景图片能调整位置, img的话调整图片位置会比较麻烦 -->
+    <!-- 如果你的图片想被搜索引擎收录, 那么请使用图片插入 -->
+    <div class="box1">我是文字</div>
+    <div class="box2">
+      <img src="../../HTML/images/s奥特曼.png" alt="" />
+      我是文字
+    </div>
+  </body>
+</html>

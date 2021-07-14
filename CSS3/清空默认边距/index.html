@@ -4,6 +4,102 @@
     <meta charset="UTF-8" />
     <title>Title</title>
     <style>
+      html {
+        color: #000;
+        background: #fff;
+      }
+      body,
+      div,
+      dl,
+      dt,
+      dd,
+      ul,
+      ol,
+      li,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      pre,
+      code,
+      form,
+      fieldset,
+      legend,
+      input,
+      textarea,
+      p,
+      blockquote,
+      th,
+      td {
+        margin: 0;
+        padding: 0;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      fieldset,
+      img {
+        border: 0;
+      }
+      address,
+      caption,
+      cite,
+      code,
+      dfn,
+      em,
+      strong,
+      th,
+      var {
+        font-style: normal;
+        font-weight: normal;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      caption,
+      th {
+        text-align: left;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 100%;
+        font-weight: normal;
+      }
+      q:before,
+      q:after {
+        content: "";
+      }
+      abbr,
+      acronym {
+        border: 0;
+        font-variant: normal;
+      }
+      sup {
+        vertical-align: text-top;
+      }
+      sub {
+        vertical-align: text-bottom;
+      }
+      input,
+      textarea,
+      select {
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        *font-size: 100%;
+      }
+      legend {
+        color: #000;
+      }
+
       body {
         margin: 0;
         padding: 0;
@@ -12,18 +108,23 @@
         width: 800px;
         height: 150px;
         background-color: gray;
-        border: 1px;
+        border: 1px solid;
       }
       .box2 {
         margin: auto;
+        line-height: 35px;
       }
     </style>
   </head>
   <body>
     <!-- 为了更好的控制盒子宽度和高度, 一般在企业开发中, 一般会先清空默认的边距 -->
+    <!-- 拷贝样式
+    http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css
+    -->
+    <!-- 设置行高 (行高和盒子高度不是一个概念)-->
     <div class="box1">
       <p class="box2">
-        一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字
+        一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字
       </p>
     </div>
   </body>

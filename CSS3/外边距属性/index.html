@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      /*
+      margin-top | right | bottom | left
+       */
+      span {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        display: inline-block;
+      }
+      div {
+        height: 100px;
+        border: 1px solid black;
+      }
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      /*
+      调整外边距
+       */
+      .box1 {
+        margin-top: 20px;
+        margin-right: 40px;
+        margin-bottom: 80px;
+        margin-left: 160px;
+      }
+      .box2 {
+        margin: 20px 40px 80px 160px;
+      }
+      .box3 {
+        margin: 100px;
+      }
+    </style>
+  </head>
+  <!-- 外边距就是标签与标签之间的距离 -->
+  <body>
+    <span class="box1">我是span</span><span class="box2">我是span</span
+    ><span class="box3">我是span</span>
+    <div class="box4"></div>
+  </body>
+</html>
